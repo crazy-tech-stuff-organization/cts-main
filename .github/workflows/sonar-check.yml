@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install Sonar Scanner
-        uses: SonarSource/sonarcloud-github-action@v2
+        uses: SonarSource/sonarcloud-github-action@ffc3010689be73b8e5ae0c57ce35968afd7909e8
 
       - name: Run Sonar Analysis
         env:
