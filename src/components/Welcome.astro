@@ -1,0 +1,58 @@
+<main class="wrap" role="main" aria-labelledby="title">
+  <section class="hero" aria-hidden="false">
+    <img
+      src="https://png.pngtree.com/png-clipart/20230623/original/pngtree-under-construction-signage-in-black-and-white-line-art-single-vector-png-image_9204534.png"
+      alt="Señal de 'Under construction' en blanco y negro — icono de construcción"
+      loading="eager"
+    />
+    <h1 id="title">Sitio en construcción Dev branch</h1>
+    <p class="lead">
+      Estamos trabajando para traerte algo increíble. Vuelve pronto.
+    </p>
+  </section>
+
+  <aside class="info" aria-label="Información">
+    <div class="card" role="region" aria-labelledby="what">
+      <h2 id="what" style="margin:0 0 6px;">¿Qué está pasando?</h2>
+      <p class="small" style="margin:0;">
+        Nuestro equipo está afinando detalles y preparando la experiencia. Si
+        necesitas contactarnos mientras tanto, deja tu correo y te avisamos
+        cuando esté listo.
+      </p>
+
+      <div class="meta" role="group" aria-label="estado">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="small">Actualizaciones en progreso</span>
+      </div>
+
+      <!-- Formulario ficticio (no envía datos) -->
+      <form
+        style="margin-top:12px;"
+        onsubmit="alert('Formulario de ejemplo: tu correo no será enviado.'); return false;"
+      >
+        <label
+          for="email"
+          class="small"
+          style="display:block; margin-bottom:6px;"
+          >Recibir notificación (ejemplo)</label
+        >
+        <input
+          id="email"
+          type="email"
+          placeholder="tu@correo.com"
+          style="width:100%; padding:10px; border-radius:8px; border:1px solid #e6e9ee; font-size:0.95rem;"
+        />
+        <button class="btn" type="submit">Avisarme</button>
+      </form>
+
+      <footer>© <span id="year"></span> — Sitio temporal</footer>
+    </div>
+  </aside>
+</main>
+
+<script>
+  // muestra año actual
+  document.getElementById("year")!.textContent = new Date()
+    .getFullYear()
+    .toString();
+</script>
