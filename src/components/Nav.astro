@@ -1,0 +1,38 @@
+---
+import { Code2 } from "lucide-react";
+import { Button } from "./ui/button";
+---
+
+<nav
+  class="border-b border-border bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex items-center gap-2">
+        <Code2 className="h-8 w-8 text-primary" />
+        <span class="text-xl font-bold">Crazy Tech Stuff</span>
+      </div>
+      <div class="hidden md:flex items-center gap-6">
+        <a
+          href="#cursos"
+          class="text-sm text-muted-foreground hover:text-foreground transition-colors"
+        >
+          Cursos
+        </a>
+        <a
+          href="#sobre"
+          class="text-sm text-muted-foreground hover:text-foreground transition-colors"
+        >
+          Sobre Nosotros
+        </a>
+        <a
+          href="#contacto"
+          class="text-sm text-muted-foreground hover:text-foreground transition-colors"
+        >
+          Contacto
+        </a>
+        <Button>Comenzar</Button>
+      </div>
+    </div>
+  </div>
+</nav>
