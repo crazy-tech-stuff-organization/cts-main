@@ -1,0 +1,41 @@
+---
+import { Button } from "./ui/button";
+---
+
+<section class="relative overflow-hidden">
+  <div
+    class="from-primary/10 via-background to-background absolute inset-0 bg-linear-to-br"
+  >
+  </div>
+  <div class="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+      <div
+        class="bg-primary/10 border-primary/20 mb-4 inline-block rounded-full border px-4 py-1.5"
+      >
+        <span class="text-primary text-sm font-medium"
+          >Aprende a programar en 2025</span
+        >
+      </div>
+      <h1
+        class="mb-6 text-5xl font-bold tracking-tight text-balance sm:text-6xl lg:text-7xl"
+      >
+        La escuela para <span class="text-primary">desarrolladores</span> del futuro
+      </h1>
+      <p class="text-muted-foreground mb-8 text-xl leading-relaxed text-pretty">
+        Domina las tecnologías más demandadas del mercado. Desde desarrollo web
+        hasta inteligencia artificial, con instructores expertos y proyectos
+        reales.
+      </p>
+      <div class="flex flex-col justify-center gap-4 sm:flex-row">
+        <Button size="lg" className="text-base"> Explorar Cursos </Button>
+        <Button
+          size="lg"
+          variant="outline"
+          className="bg-transparent text-base"
+        >
+          Ver Demo Gratis
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>

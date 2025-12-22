@@ -1,0 +1,14 @@
+---
+// MainLayout.astro
+import Nav from "@/components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import BaseLayout from "./BaseLayout.astro";
+---
+
+<BaseLayout title="CTS Community">
+  <Nav />
+  <main>
+    <slot />
+  </main>
+  <Footer />
+</BaseLayout>
